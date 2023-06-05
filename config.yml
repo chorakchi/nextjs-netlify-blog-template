@@ -1,6 +1,0 @@
-backend:
-  name: github
-  branch: main
-  repo: chorakchi/nextjs-netlify-blog-template
-  site_domain: kaleidoscopic-lollipop-d26187.netlify.app  # Update with your site's Netlify domain
-  access_token: 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

@@ -1,4 +1,4 @@
 backend:
   name: git-gateway
   repo: username/repository
-  branch: master
+  branch: main

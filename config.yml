@@ -1,4 +1,23 @@
 backend:
-  name: git-gateway
+  name: github
   branch: main
   repo: chorakchi/nextjs-netlify-blog-template
+  base_url: /admin        # The base URL where the CMS will be accessible
+
+  # Optional: Uncomment the following lines if using Git Gateway
+  # auth_endpoint: /.netlify/git/github
+  # site_domain: your-site-domain.com
+
+media_folder: static/images      # The folder where uploaded media files will be stored
+public_folder: /images           # The public URL for accessing media files
+
+collections:
+  - name: blog                  # Collection name (can be customized)
+    label: Blog                  # Collection label (displayed in the CMS)
+    folder: _posts               # Folder where blog posts will be stored
+    create: true                 # Allow creating new posts
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'  # Slug format for new posts
+    fields:                      # Define the fields for a blog post
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: date }
+      - { name: body, label: Body, widget: markdown }

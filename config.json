@@ -1,4 +1,10 @@
 {
+  "backend": {
+    "name": "git-gateway",
+    "branch": "main",
+    "site_domain": "kaleidoscopic-lollipop-d26187.netlify.app",
+    "access_token": "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"
+  },
   "base_url": "kaleidoscopic-lollipop-d26187.netlify.app",
   "site_title": "Next.js Netlify Blog",
   "site_description": "Next.js blog template for Netlify",
